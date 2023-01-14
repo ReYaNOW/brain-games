@@ -8,7 +8,7 @@ def correct(number):
     if number == 1:
         return 'no'
     result = 2
-    while result < number / 2:
+    while result < number:
         if number % result == 0:
             return 'no'
         result += 1
