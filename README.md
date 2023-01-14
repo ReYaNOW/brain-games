@@ -2,6 +2,8 @@
 [![Actions Status](https://github.com/ReYaNOW/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/ReYaNOW/python-project-49/actions)
 ### CodeClimate tests and Maintainability status:
 <a href="https://codeclimate.com/github/ReYaNOW/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/f09f6f2f890183ba1102/maintainability" /></a>  
+  
+  
 Этот проект представляет собой игру - Игры разума  
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:  
 
@@ -18,7 +20,7 @@ https://asciinema.org/a/551559
 https://asciinema.org/a/551560  
   
 Для запуска игры «Калькулятор» необходимо использовать команду ```brain-calc```  
-https://asciinema.org/a/551402 
+https://asciinema.org/a/551578  
   
 Для запуска игры по определение наибольшего общего делителя необходимо использовать команду ```brain-gcd```  
 https://asciinema.org/a/551517  
