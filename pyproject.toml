@@ -1,16 +1,35 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти её заново."
 authors = ["Sergey Kalye <reyangood@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+repository = "https://github.com/ReYaNOW/python-project-49"
+classifiers = [
+    'Environment :: Console',
+    'Intended Audience :: End Users/Desktop',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
+    'Programming Language :: Python',
+    'Topic :: Communications :: Email',
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+prompt = "^0.4.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.games.brain_games_greeting:main"
+brain-even = "brain_games.games.brain_even:main"
+brain-calc = "brain_games.games.brain_calc:main"
+brain-gcd = "brain_games.games.brain_gcd:main"
+brain-progression = "brain_games.games.brain_progression:main"
+brain-prime = "brain_games.games.brain_prime:main"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
