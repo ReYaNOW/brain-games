@@ -5,7 +5,6 @@ from brain_games.scripts.brain import solver, wrong_answer
 
 
 def rnd_prgrs():
-    global correct
     begin = random.randint(1, 10)
     end = random.randint(80, 110)
     n = random.randint(2, 10)
@@ -18,7 +17,7 @@ def rnd_prgrs():
     correct = str(result[random_index])
     result[random_index] = '..'
     result = ' '.join(map(str, result))
-    return result
+    return result, correct
 
 
 def main():
@@ -28,7 +27,7 @@ def main():
     THREE_TIMES = 3
     while counter < THREE_TIMES:
         counter += 1
-        if solver(f'{rnd_prgrs()}', correct) == 'Correct!':
+        if solver(*rnd_prgrs()) == 'Correct!':
             print('Correct!')
         else:
             return wrong_answer()
