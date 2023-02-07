@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 import brain_games.cli
-from brain_games.scripts.brain import solver, wrong_answer
+from brain_games.scripts.brain import solver
 
 
 def rnd_prgrs():
@@ -30,7 +30,7 @@ def main():
         if solver(*rnd_prgrs()) == 'Correct!':
             print('Correct!')
         else:
-            return wrong_answer()
+            return None
 
     print(f'Congratulations, {brain_games.cli.name}!')
 

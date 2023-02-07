@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 import brain_games.cli
-from brain_games.scripts.brain import solver, wrong_answer
+from brain_games.scripts.brain import solver
 
 
 def correct(a, b, symb):
@@ -27,7 +27,7 @@ def main():
         if solver(f'{n1} {rn_sy} {n2}', correct(n1, n2, rn_sy)) == 'Correct!':
             print('Correct!')
         else:
-            return wrong_answer()
+            return None
 
     print(f'Congratulations, {brain_games.cli.name}!')
 
