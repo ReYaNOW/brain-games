@@ -4,13 +4,14 @@ import brain_games.cli
 from brain_games.scripts.brain import solver
 
 
-def correct(a, b, symb):
-    if symb == '+':
-        return str(a + b)
-    if symb == '-':
-        return str(a - b)
-    if symb == '*':
-        return str(a * b)
+def calc(a: int, b: int, operator: str):
+    match operator:
+        case '+':
+            return str(a+b)
+        case '-':
+            return str(a-b)
+        case '*':
+            return str(a*b)
 
 
 def main():
@@ -24,7 +25,7 @@ def main():
         rn_sy = random.choice(SYMBOLS)
         n1 = random.randint(1, 100)
         n2 = random.randint(1, 15)
-        if solver(f'{n1} {rn_sy} {n2}', correct(n1, n2, rn_sy)) == 'Correct!':
+        if solver(f'{n1} {rn_sy} {n2}', calc(n1, n2, rn_sy)) == 'Correct!':
             print('Correct!')
         else:
             return None
