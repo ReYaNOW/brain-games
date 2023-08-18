@@ -1,34 +1,35 @@
 #!/usr/bin/python3
+import math
 import random
+
 import brain_games.cli
 from brain_games.scripts.brain import solver
 
 
-def correct(num1, num2):
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
-        else:
-            num2 = num2 % num1
-    return str(num1 + num2)
+def find_answer(num1, num2):
+    gcd = math.gcd(num1, num2)
+    return str(gcd)
 
 
 def main():
-    brain_games.cli.welcome_user()
-    print('Find the greatest common divisor of given numbers.')
+    name = brain_games.cli.welcome_user()
+    print("Find the greatest common divisor of given numbers.")
+
     counter = 0
-    THREE_TIMES = 3
-    while counter < THREE_TIMES:
+    three_times = 3
+
+    while counter < three_times:
         counter += 1
-        n1 = random.randint(1, 100)
-        n2 = random.randint(1, 50)
-        if solver(f'{n1} {n2}', correct(n1, n2)) == 'Correct!':
-            print('Correct!')
-        else:
-            return None
+        num1 = random.randint(1, 100)
+        num2 = random.randint(1, 50)
 
-    print(f'Congratulations, {brain_games.cli.name}!')
+        answer = find_answer(num1, num2)
+        user_answer = solver(f"{num1} {num2}", answer, name)
+        if user_answer == "incorrect":
+            return
+
+    print(f"Congratulations, {name}!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

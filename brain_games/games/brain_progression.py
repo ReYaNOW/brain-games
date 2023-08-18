@@ -4,36 +4,41 @@ import brain_games.cli
 from brain_games.scripts.brain import solver
 
 
-def rnd_prgrs():
+def random_progression():
     begin = random.randint(1, 10)
     end = random.randint(80, 110)
-    n = random.randint(2, 10)
+    step = random.randint(2, 10)
+
     result = []
-    for i in range(begin, end, n):
+    for i in range(begin, end, step):
         result.append(i)
-    result = result[:12]
+
+    max_len = 12
+    result = result[:max_len]
     result.sort()
+
     random_index = random.randint(1, len(result) - 1)
     correct = str(result[random_index])
-    result[random_index] = '..'
-    result = ' '.join(map(str, result))
+    result[random_index] = ".."
+    result = " ".join(map(str, result))
     return result, correct
 
 
 def main():
-    brain_games.cli.welcome_user()
-    print('What number is missing in the progression?')
+    name = brain_games.cli.welcome_user()
+    print("What number is missing in the progression?")
     counter = 0
-    THREE_TIMES = 3
-    while counter < THREE_TIMES:
+    three_times = 3
+    while counter < three_times:
         counter += 1
-        if solver(*rnd_prgrs()) == 'Correct!':
-            print('Correct!')
-        else:
-            return None
 
-    print(f'Congratulations, {brain_games.cli.name}!')
+        progression, answer = random_progression()
+        user_answer = solver(progression, answer, name)
+        if user_answer == "incorrect":
+            return
+
+    print(f"Congratulations, {name}!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

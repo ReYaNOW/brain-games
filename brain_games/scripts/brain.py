@@ -1,16 +1,17 @@
 import prompt
-import brain_games.cli
 
 
-def wrong_answer(user_answ, correct):
-    print(f'"{user_answ}" is wrong answer ;(. Correct answer was "{correct}"')
-    return print(f"Let's try again, {brain_games.cli.name}!")
-
-
-def solver(question, correct_answer):
-    correct = correct_answer
-    user_answ = prompt.string(f'Question: {question} \nYour answer: ')
-    if user_answ == correct:
-        return 'Correct!'
+def solver(question, correct_answer, name):
+    user_answer = prompt.string(f"Question: {question} \nYour answer: ")
+    if user_answer == correct_answer:
+        print("Correct!")
     else:
-        return wrong_answer(user_answ, correct)
+        wrong_answer(user_answer, correct_answer, name)
+        return 'incorrect'
+
+
+def wrong_answer(user_answer, answer, name):
+    print(
+        f'"{user_answer}" is wrong answer ;(. Correct answer was "{answer}"'
+    )
+    return print(f"Let's try again, {name}!")
