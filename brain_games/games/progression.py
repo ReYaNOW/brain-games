@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 import random
 import brain_games.cli
-from brain_games.scripts.brain import solver
+from brain_games.scripts.brain import questioner
 
 
-def random_progression():
+def get_random_progression():
     begin = random.randint(1, 10)
     end = random.randint(80, 110)
     step = random.randint(2, 10)
@@ -24,21 +24,15 @@ def random_progression():
     return result, correct
 
 
-def main():
-    name = brain_games.cli.welcome_user()
-    print("What number is missing in the progression?")
-    counter = 0
-    three_times = 3
-    while counter < three_times:
-        counter += 1
+def progression_game():
+    desc = "What number is missing in the progression?"
+    questioner(progression_question, desc)
 
-        progression, answer = random_progression()
-        user_answer = solver(progression, answer, name)
-        if user_answer == "incorrect":
-            return
 
-    print(f"Congratulations, {name}!")
+def progression_question():
+    progression, answer = get_random_progression()
+    return progression, answer
 
 
 if __name__ == "__main__":
-    main()
+    progression_game()
