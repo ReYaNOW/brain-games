@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import random
-import brain_games.cli
+
 from brain_games.scripts.brain import questioner
 
 
