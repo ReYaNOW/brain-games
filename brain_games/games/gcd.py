@@ -1,8 +1,7 @@
-#!/usr/bin/python3
 import math
 import random
 
-from brain_games.scripts.brain import questioner
+from brain_games.engine import questioner
 
 
 def get_gcd(num1, num2):

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from brain_games.games.progression import progression_game
 
 

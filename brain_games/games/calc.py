@@ -1,7 +1,6 @@
-#!/usr/bin/python3
 import random
 
-from brain_games.scripts.brain import questioner
+from brain_games.engine import questioner
 
 
 def calculate_answer(a: int, b: int, operator: str):
