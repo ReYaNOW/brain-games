@@ -39,5 +39,5 @@ def welcome_user(desc=""):
     return name
 
 
-def get_random_int(begin=100, end=100):
+def get_random_int(begin=1, end=100):
     return random.randint(begin, end)
