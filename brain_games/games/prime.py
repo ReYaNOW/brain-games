@@ -5,11 +5,11 @@ from brain_games.engine import questioner, get_random_int
 
 def check_prime(number):
     if number <= 1:
-        return False
+        return 'no'
     for index in range(2, int(math.sqrt(number)) + 1):
         if number % index == 0:
-            return False
-    return True
+            return 'no'
+    return 'yes'
 
 
 def prime_game():
