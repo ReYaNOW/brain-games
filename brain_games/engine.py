@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+import random
+
 import prompt
 
 
@@ -38,9 +39,5 @@ def welcome_user(desc=""):
     return name
 
 
-def main():
-    welcome_user()
-
-
-if __name__ == "__main__":
-    main()
+def get_random_int(begin=100, end=100):
+    return random.randint(begin, end)
