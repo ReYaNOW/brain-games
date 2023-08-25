@@ -1,10 +1,10 @@
 import prompt
 
-import brain_games.cli
+from brain_games.cli import welcome_user
 
 
 def questioner(get_quest_and_answer, desc):
-    name = brain_games.cli.welcome_user(desc)
+    name = welcome_user(desc)
 
     counter = 0
     three_times = 3
