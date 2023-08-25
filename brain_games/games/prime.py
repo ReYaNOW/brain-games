@@ -1,17 +1,15 @@
-import random
+import math
 
-from brain_games.engine import questioner
+from brain_games.engine import questioner, get_random_int
 
 
 def check_prime(number):
-    if number == 1:
-        return "no"
-    result = 2
-    while result < number:
-        if number % result == 0:
-            return "no"
-        result += 1
-    return "yes"
+    if number <= 1:
+        return False
+    for index in range(2, int(math.sqrt(number)) + 1):
+        if number % index == 0:
+            return False
+    return True
 
 
 def prime_game():
@@ -20,10 +18,6 @@ def prime_game():
 
 
 def prime_question():
-    num = random.randint(1, 100)
+    num = get_random_int()
     answer = check_prime(num)
     return num, answer
-
-
-if __name__ == "__main__":
-    prime_game()

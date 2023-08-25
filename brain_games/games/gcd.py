@@ -1,7 +1,6 @@
 import math
-import random
 
-from brain_games.engine import questioner
+from brain_games.engine import questioner, get_random_int
 
 
 def get_gcd(num1, num2):
@@ -15,14 +14,10 @@ def gcd_game():
 
 
 def gcd_question():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 50)
+    num1 = get_random_int()
+    num2 = get_random_int(end=50)
 
     question = f"{num1} {num2}"
     answer = get_gcd(num1, num2)
 
     return question, answer
-
-
-if __name__ == "__main__":
-    gcd_game()

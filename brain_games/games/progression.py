@@ -1,12 +1,10 @@
-import random
-
-from brain_games.engine import questioner
+from brain_games.engine import questioner, get_random_int
 
 
 def get_random_progression():
-    begin = random.randint(1, 10)
-    end = random.randint(80, 110)
-    step = random.randint(2, 10)
+    begin = get_random_int(1, 10)
+    end = get_random_int(80, 110)
+    step = get_random_int(2, 10)
 
     result = []
     for i in range(begin, end, step):
@@ -16,7 +14,7 @@ def get_random_progression():
     result = result[:max_len]
     result.sort()
 
-    random_index = random.randint(1, len(result) - 1)
+    random_index = get_random_int(1, len(result) - 1)
     correct = str(result[random_index])
     result[random_index] = ".."
     result = " ".join(map(str, result))
@@ -31,7 +29,3 @@ def progression_game():
 def progression_question():
     progression, answer = get_random_progression()
     return progression, answer
-
-
-if __name__ == "__main__":
-    progression_game()

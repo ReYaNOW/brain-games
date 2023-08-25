@@ -1,6 +1,4 @@
-import random
-
-from brain_games.engine import questioner
+from brain_games.engine import questioner, get_random_int
 
 
 def check_even(number):
@@ -16,10 +14,6 @@ def even_game():
 
 
 def even_question():
-    num = random.randint(1, 100)
+    num = get_random_int()
     answer = check_even(num)
     return num, answer
-
-
-if __name__ == "__main__":
-    even_game()

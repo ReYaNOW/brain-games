@@ -1,6 +1,4 @@
-import random
-
-from brain_games.engine import questioner
+from brain_games.engine import questioner, get_random_int
 
 
 def calculate_answer(a: int, b: int, operator: str):
@@ -20,15 +18,12 @@ def calc_game():
 
 def calc_question():
     symbols = ["+", "-", "*"]
-    symbol = random.choice(symbols)
+    index = get_random_int(0, 2)
+    symbol = symbols[index]
 
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 15)
+    num1 = get_random_int()
+    num2 = get_random_int(end=15)
 
     question = f"{num1} {symbol} {num2}"
     answer = calculate_answer(num1, num2, symbol)
     return question, answer
-
-
-if __name__ == "__main__":
-    calc_game()
