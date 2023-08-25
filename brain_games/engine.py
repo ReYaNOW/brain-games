@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import prompt
 
 
@@ -35,3 +36,11 @@ def welcome_user(desc=""):
     if desc:
         print(desc)
     return name
+
+
+def main():
+    welcome_user()
+
+
+if __name__ == "__main__":
+    main()
