@@ -1,6 +1,7 @@
 import math
 
-from brain_games.engine import questioner, get_random_int
+from brain_games.engine import questioner
+from brain_games.utils import get_random_int
 
 
 def check_prime(number):

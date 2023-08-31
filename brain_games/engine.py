@@ -1,6 +1,6 @@
-import random
-
 import prompt
+
+from brain_games.utils import welcome_user
 
 
 def questioner(get_quest_and_answer, desc):
@@ -27,17 +27,3 @@ def questioner(get_quest_and_answer, desc):
 def wrong_answer(user_answer, answer, name):
     print(f'"{user_answer}" is wrong answer ;(. Correct answer was "{answer}"')
     return print(f"Let's try again, {name}!")
-
-
-def welcome_user(desc=""):
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-
-    if desc:
-        print(desc)
-    return name
-
-
-def get_random_int(begin=1, end=100):
-    return random.randint(begin, end)
