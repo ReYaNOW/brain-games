@@ -13,7 +13,7 @@ def calc_question():
     num2 = get_random_int(end=15)
 
     question = f"{num1} {symbol} {num2}"
-    answer = operation(num1, num2, operation)
+    answer = operation(num1, num2)
     return question, answer
 
 
