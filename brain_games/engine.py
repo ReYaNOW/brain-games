@@ -1,29 +1,23 @@
 import prompt
 
-from brain_games.utils import welcome_user
+from brain_games.consts import three_times
 
 
-def questioner(get_quest_and_answer, desc):
-    name = welcome_user(desc)
+def questioner(get_quest_and_answer: callable, game_instruction: str):
+    name = prompt.string("Welcome to the Brain Games!\nMay I have your name?")
+    print(f"Hello, {name}!{game_instruction}")
 
-    counter = 0
-    three_times = 3
+    message = "is wrong answer ;(. Correct answer was"
 
-    while counter < three_times:
-        counter += 1
-
+    for _ in range(three_times):
         question, correct_answer = get_quest_and_answer()
         user_answer = prompt.string(f"Question: {question} \nYour answer: ")
 
         if user_answer == correct_answer:
             print("Correct!")
         else:
-            wrong_answer(user_answer, correct_answer, name)
-            return "incorrect"
+            print(f"'{user_answer}' {message} '{correct_answer}'")
+            print(f"Let's try again, {name}!")
+            return
 
     print(f"Congratulations, {name}!")
-
-
-def wrong_answer(user_answer, answer, name):
-    print(f'"{user_answer}" is wrong answer ;(. Correct answer was "{answer}"')
-    return print(f"Let's try again, {name}!")
