@@ -1,3 +1,4 @@
+from brain_games.consts import progression_desc
 from brain_games.engine import questioner
 from brain_games.utils import get_random_int
 
@@ -18,15 +19,9 @@ def get_random_progression():
     random_index = get_random_int(1, len(result) - 1)
     correct = str(result[random_index])
     result[random_index] = ".."
-    result = " ".join(map(str, result))
+    result = " ".join(result)
     return result, correct
 
 
 def progression_game():
-    desc = "What number is missing in the progression?"
-    questioner(progression_question, desc)
-
-
-def progression_question():
-    progression, answer = get_random_progression()
-    return progression, answer
+    questioner(get_random_progression, progression_desc)
