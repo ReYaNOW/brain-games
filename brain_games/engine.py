@@ -13,7 +13,7 @@ def questioner(get_quest_and_answer: callable, game_instruction: str):
         question, correct_answer = get_quest_and_answer()
         user_answer = prompt.string(f"Question: {question} \nYour answer: ")
 
-        if user_answer == correct_answer:
+        if user_answer == str(correct_answer):
             print("Correct!")
         else:
             print(f"'{user_answer}' {message} '{correct_answer}'")
