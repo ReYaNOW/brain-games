@@ -10,7 +10,7 @@ def gcd_question():
     num2 = get_random_int(end=50)
 
     question = f"{num1} {num2}"
-    answer = str(math.gcd(num1, num2))
+    answer = math.gcd(num1, num2)
     return question, answer
 
 
