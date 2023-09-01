@@ -17,9 +17,9 @@ def get_random_progression():
     result.sort()
 
     random_index = get_random_int(1, len(result) - 1)
-    correct = str(result[random_index])
+    correct = result[random_index]
     result[random_index] = ".."
-    result = " ".join(result)
+    result = " ".join(map(str, result))
     return result, correct
 
 

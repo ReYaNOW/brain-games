@@ -5,7 +5,7 @@ from brain_games.consts import three_times
 
 def questioner(get_quest_and_answer: callable, game_instruction: str):
     name = prompt.string("Welcome to the Brain Games!\nMay I have your name? ")
-    print(f"Hello, {name}!{game_instruction}")
+    print(f"Hello, {name}!\n{game_instruction}")
 
     message = "is wrong answer ;(. Correct answer was"
 
