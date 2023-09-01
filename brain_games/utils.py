@@ -1,17 +1,9 @@
 import random
 
-import prompt
 
-
-def welcome_user(desc=""):
-    print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
-    print(f"Hello, {name}!")
-
-    if desc:
-        print(desc)
-    return name
-
-
-def get_random_int(begin=1, end=100):
+def get_random_int(begin: int = 1, end: int = 100) -> int:
     return random.randint(begin, end)
+
+
+def random_choice(iterable: list) -> object:
+    return random.choice(iterable)
