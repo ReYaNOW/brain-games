@@ -14,7 +14,7 @@ def calc_question():
 
     question = f"{num1} {symbol} {num2}"
     answer = operation(num1, num2)
-    return question, answer
+    return question, str(answer)
 
 
 def calc_game():
