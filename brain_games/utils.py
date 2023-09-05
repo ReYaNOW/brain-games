@@ -1,8 +1,8 @@
 import random
 
 
-def get_random_int(begin: int = 1, end: int = 100) -> int:
-    return random.randint(begin, end)
+def get_random_int() -> int:
+    return random.randint(1, 100)
 
 
 def random_choice(iterable: list) -> object:
