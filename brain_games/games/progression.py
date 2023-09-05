@@ -1,27 +1,24 @@
-from brain_games.consts import progression_desc
+from random import randint
+
+from brain_games.consts import PROGRESSION_DESC, PROGRESSION_LEN
 from brain_games.engine import questioner
 from brain_games.utils import get_random_int
 
 
 def get_random_progression():
-    begin = get_random_int(1, 10)
-    end = get_random_int(80, 110)
-    step = get_random_int(2, 10)
+    begin = get_random_int()
+    step = get_random_int()
+    missed_num_ind = randint(0, PROGRESSION_LEN - 1)
 
-    result = []
-    for i in range(begin, end, step):
-        result.append(i)
+    progression = [
+        ".." if i == missed_num_ind else str(begin + i * step)
+        for i in range(PROGRESSION_LEN)
+    ]
 
-    max_len = 12
-    result = result[:max_len]
-    result.sort()
-
-    random_index = get_random_int(1, len(result) - 1)
-    correct = result[random_index]
-    result[random_index] = ".."
-    result = " ".join(map(str, result))
-    return result, correct
+    str_progression = " ".join(progression)
+    missed_num = begin + missed_num_ind * step
+    return str_progression, missed_num
 
 
 def progression_game():
-    questioner(get_random_progression, progression_desc)
+    questioner(get_random_progression, PROGRESSION_DESC)

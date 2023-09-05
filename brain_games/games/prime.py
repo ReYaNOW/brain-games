@@ -1,6 +1,6 @@
 import math
 
-from brain_games.consts import prime_desc
+from brain_games.consts import PRIME_DESC
 from brain_games.engine import questioner
 from brain_games.utils import get_random_int
 
@@ -21,4 +21,4 @@ def prime_question():
 
 
 def prime_game():
-    questioner(prime_question, prime_desc)
+    questioner(prime_question, PRIME_DESC)

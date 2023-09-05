@@ -1,6 +1,6 @@
 import prompt
 
-from brain_games.consts import three_times
+from brain_games.consts import THREE_TIMES
 
 
 def questioner(get_quest_and_answer: callable, game_instruction: str):
@@ -9,7 +9,7 @@ def questioner(get_quest_and_answer: callable, game_instruction: str):
 
     message = "is wrong answer ;(. Correct answer was"
 
-    for _ in range(three_times):
+    for _ in range(THREE_TIMES):
         question, correct_answer = get_quest_and_answer()
         user_answer = prompt.string(f"Question: {question} \nYour answer: ")
 

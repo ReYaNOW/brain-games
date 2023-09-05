@@ -1,4 +1,4 @@
-from brain_games.consts import even_desc
+from brain_games.consts import EVEN_DESC
 from brain_games.engine import questioner
 from brain_games.utils import get_random_int
 
@@ -16,4 +16,4 @@ def even_question():
 
 
 def even_game():
-    questioner(even_question, even_desc)
+    questioner(even_question, EVEN_DESC)
