@@ -21,4 +21,4 @@ def get_prime_num_question():
 
 
 def start_prime_num_game():
-    ask_questions(get_prime_num_question(), PRIME_INSTRUCT)
+    ask_questions(get_prime_num_question, PRIME_INSTRUCT)
