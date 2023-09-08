@@ -1,21 +1,26 @@
-from operator import add, sub, mul
-
-from brain_games.consts import CALC_DESC
-from brain_games.engine import questioner
+from brain_games.consts import CALC_INSTRUCT
+from brain_games.engine import ask_questions
 from brain_games.utils import get_random_int, random_choice
 
 
-def calc_question():
-    operations = [("+", add), ("-", sub), ("*", mul)]
-    symbol, operation = random_choice(operations)
-
+def get_calc_question():
     num1 = get_random_int()
     num2 = get_random_int()
 
-    question = f"{num1} {symbol} {num2}"
-    answer = operation(num1, num2)
-    return question, answer
+    symbols = ['+', '-', '*']
+    symbol = random_choice(symbols)
+
+    match symbol:
+        case '+':
+            answer = num1 + num2
+        case '-':
+            answer = num1 - num2
+        case _:
+            answer = num1 * num2
+
+    question = f'{num1} {symbol} {num2}'
+    return question, str(answer)
 
 
-def calc_game():
-    questioner(calc_question, CALC_DESC)
+def start_calc_game():
+    ask_questions(get_calc_question, CALC_INSTRUCT)
