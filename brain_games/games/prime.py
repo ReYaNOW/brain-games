@@ -1,7 +1,7 @@
 import math
 
 from brain_games.consts import PRIME_INSTRUCT
-from brain_games.engine import ask_questions
+from brain_games.engine import run_game
 from brain_games.utils import get_random_int
 
 
@@ -14,11 +14,11 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def get_prime_num_question():
+def get_prime_num_expression_and_answer():
     num = get_random_int()
     answer = 'yes' if is_prime(num) else 'no'
     return num, answer
 
 
 def start_prime_num_game():
-    ask_questions(get_prime_num_question, PRIME_INSTRUCT)
+    run_game(get_prime_num_expression_and_answer, PRIME_INSTRUCT)

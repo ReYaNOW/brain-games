@@ -1,14 +1,15 @@
+from random import choice
+
 from brain_games.consts import CALC_INSTRUCT
-from brain_games.engine import ask_questions
-from brain_games.utils import get_random_int, random_choice
+from brain_games.engine import run_game
+from brain_games.utils import get_random_int
 
 
-def get_calc_question():
-    num1 = get_random_int()
-    num2 = get_random_int()
+def get_calc_expression_and_answer():
+    num1, num2 = get_random_int(), get_random_int()
 
     symbols = ['+', '-', '*']
-    symbol = random_choice(symbols)
+    symbol = choice(symbols)
 
     match symbol:
         case '+':
@@ -23,4 +24,4 @@ def get_calc_question():
 
 
 def start_calc_game():
-    ask_questions(get_calc_question, CALC_INSTRUCT)
+    run_game(get_calc_expression_and_answer, CALC_INSTRUCT)
