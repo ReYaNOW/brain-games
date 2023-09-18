@@ -16,16 +16,31 @@
   
 Для установки игры необходимо использовать команду ```poetry install```  
 Так же имеется возможность сделать билд проекта при помощи двух команд
-```make build```  
-```python3 -m pip install --user dist/*.whl```  
+```
+make build
+```  
+А потом
+```
+python3 -m pip install --user dist/*.whl
+```
 Для обоих способов необходимо находиться в корневой директории проекта
 <a href="https://asciinema.org/a/608585?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153157794653024296/image.png" alt="Git" /></a>
   
-Для запуска игры по определению четного числа необходимо использовать команду ```brain-even```  
-[Пример](https://asciinema.org/a/551560?autoplay=1)  
   
-Для запуска игры «Калькулятор» необходимо использовать команду ```brain-calc```  
-[Пример](https://asciinema.org/a/551578?autoplay=1)  
+Для запуска игры по определению четного числа необходимо использовать команду  
+```
+brain-even
+```
+<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://cdn.discordapp.com/attachments/324178393161793536/1153161386915016754/image.png" alt="Git" /></a>  
+
+  
+Для запуска игры «Калькулятор» необходимо использовать команду 
+```
+brain-calc
+```
+<a href="https://asciinema.org/a/551578?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153161070479933531/image.png" alt="Git" /></a> 
+
+
   
 Для запуска игры по определение НОД необходимо использовать команду ```brain-gcd```  
 [Пример](https://asciinema.org/a/551517?autoplay=1)  
