@@ -51,7 +51,7 @@ brain-even
 <a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="image" /></a>  
   
 <a href="https://asciinema.org/a/551560?autoplay=1">
-  <img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="Alt Text" style="border: 2px solid red;">
+  <img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="Alt Text" style="border: 2px solid red">
 </a>
 
 ```
