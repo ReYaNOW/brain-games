@@ -27,7 +27,7 @@ poetry build && pip install dist/*.whl
   
 ![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)  
   
-Устанавливать игру стоит в отдельном окружении для избежания проблем с зависимостями  
+#### Устанавливать игру стоит в отдельном окружении для избежания проблем с зависимостями  
 
 ### Как создать окружение
 Windows  PowerShell
