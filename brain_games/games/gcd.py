@@ -5,7 +5,7 @@ from brain_games.engine import run_game
 from brain_games.utils import get_random_int
 
 
-def get_gcd_expression_and_answer():
+def get_gcd_expression_and_answer() -> tuple[str, str]:
     num1, num2 = get_random_int(), get_random_int()
 
     question = f'{num1} {num2}'

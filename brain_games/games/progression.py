@@ -5,9 +5,8 @@ from brain_games.engine import run_game
 from brain_games.utils import get_random_int
 
 
-def get_progression_and_missed_number():
-    begin = get_random_int()
-    step = get_random_int()
+def get_progression_and_missed_number() -> tuple[str, str]:
+    begin, step = get_random_int(), get_random_int()
     missed_num_ind = randint(0, PROGRESSION_LEN - 1)
 
     progression = [
