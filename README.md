@@ -46,15 +46,31 @@ brain-calc
 
 
   
-Для запуска игры по определение НОД необходимо использовать команду ```brain-gcd```  
-[Пример](https://asciinema.org/a/551517?autoplay=1)  
+Для запуска игры по определение НОД необходимо использовать команду 
+```
+brain-gcd
+```  
+<a href="https://asciinema.org/a/551517?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153394675315638403/image.png" alt="image" /></a> 
+
   
-Для запуска игры «Прогрессия» необходимо использовать команду ```brain-progression```  
-[Пример](https://asciinema.org/a/551531?autoplay=1)  
+Для запуска игры по определение простого числа необходимо использовать команду 
+```
+brain-prime
+```  
+<a href="https://asciinema.org/a/551539?autoplay=1" target="_blank" rel="noreferrer"><img src="https://cdn.discordapp.com/attachments/324178393161793536/1153394997568229508/image.png" alt="image" /></a> 
+
+
+Для запуска игры «Прогрессия» необходимо использовать команду 
+```
+brain-progression
+```  
+![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/progression.gif?raw=true)   
   
-Для запуска игры по определение простого числа необходимо использовать команду ```brain-prime```  
-[Пример](https://asciinema.org/a/551539?autoplay=1)  
-  
+<hr>  
+
 Минимальные требования:  
 Наличие CLI  
 Python^3.10  
+
+Опционально:  
+Poetry
