@@ -28,7 +28,7 @@ poetry build && pip install dist/*.whl
 Устанавливать игру стоит в отдельном окружении для избежания проблем с зависимостями  
   
 
-#### Как создать окружение
+### Как создать окружение
 Windows  PowerShell
 ```
 python -m venv venv; ./venv/Scripts/activate.ps1
