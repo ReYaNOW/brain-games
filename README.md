@@ -79,6 +79,4 @@ brain-progression
 Минимальные требования:  
 Наличие CLI  
 Python^3.10  
-
-Опционально:  
 Poetry
