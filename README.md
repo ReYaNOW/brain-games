@@ -25,6 +25,20 @@ poetry install
 poetry build && pip install dist/*.whl
 ```
 
+Устанавливать игру стоит в отдельном окружении для избежания проблем с зависимостями  
+  
+
+#### Как создать окружение
+Windows  PowerShell
+```
+python -m venv venv; ./venv/Scripts/activate.ps1
+```
+  
+Linux  
+```
+python3 -m venv venv && source venv/bin/activate
+```
+  
 ![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)  
   
 ## Использование  
