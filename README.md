@@ -22,7 +22,7 @@ poetry install
   
 Так же имеется возможность сделать билд проекта с последующей установкой при помощи двух команд
 ```
-poetry build && pip install dist/*.whl --force-reinstall
+poetry build && pip install dist/*.whl
 ```
 
 ![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)  
