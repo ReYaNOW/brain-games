@@ -28,13 +28,12 @@ python3 -m pip install --user dist/*.whl
 ```
 Для обоих способов необходимо находиться в корневой директории проекта 
 ![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)
-<br>  
-<hr>
-Для запуска игры по определению четного числа необходимо использовать команду  
+<hr>  
 
+Для запуска игры по определению четного числа необходимо использовать команду
 ```
 brain-even
-```
+```  
 <a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="image" /></a>  
 
   
