@@ -49,7 +49,11 @@ python3 -m venv venv && source venv/bin/activate
 brain-even
 ```  
 <a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="image" /></a>  
-
+  
+```
+brain-even
+```  
+<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153475887845609482/image.png" alt="image" /></a>  
 
 ```
 brain-calc
