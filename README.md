@@ -30,8 +30,8 @@ python3 -m pip install --user dist/*.whl
 ![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)
 <br>  
 <hr>  
-  
 Для запуска игры по определению четного числа необходимо использовать команду  
+
 ```
 brain-even
 ```
