@@ -6,7 +6,7 @@ from brain_games.utils import get_random_int
 def is_prime(number: int) -> bool:
     if number <= 1:
         return False
-    for index in range(2, number ** 2 + 1):
+    for index in range(2, int(number**0.5) + 1):
         if number % index == 0:
             return False
     return True
