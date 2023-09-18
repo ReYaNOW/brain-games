@@ -53,7 +53,7 @@ brain-even
 ```
 brain-even
 ```  
-<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153475887845609482/image.png" alt="image" /></a>  
+<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153476326414635119/image.png" alt="image" /></a>  
 
 ```
 brain-calc
