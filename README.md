@@ -12,10 +12,13 @@
 Определение четного числа.  
 Определение наибольшего общего делителя.  
 Определение простого числа.  
-  
-  
-Для установки игры необходимо использовать команду ```poetry install```  
-Так же имеется возможность сделать билд проекта при помощи двух команд
+<br>  
+
+Для установки игры необходимо использовать команду 
+```
+poetry install
+```  
+Так же имеется возможность сделать билд проекта с последующей установкой при помощи двух команд
 ```
 make build
 ```  
@@ -23,22 +26,22 @@ make build
 ```
 python3 -m pip install --user dist/*.whl
 ```
-Для обоих способов необходимо находиться в корневой директории проекта
-<a href="https://asciinema.org/a/608585?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153157794653024296/image.png" alt="Git" /></a>
-  
-  
+Для обоих способов необходимо находиться в корневой директории проекта 
+![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)
+<br>
+
 Для запуска игры по определению четного числа необходимо использовать команду  
 ```
 brain-even
 ```
-<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://cdn.discordapp.com/attachments/324178393161793536/1153161386915016754/image.png" alt="Git" /></a>  
+<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="image" /></a>  
 
   
 Для запуска игры «Калькулятор» необходимо использовать команду 
 ```
 brain-calc
 ```
-<a href="https://asciinema.org/a/551578?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153161070479933531/image.png" alt="Git" /></a> 
+<a href="https://asciinema.org/a/551578?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153161070479933531/image.png" alt="image" /></a> 
 
 
   
