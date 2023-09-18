@@ -14,8 +14,12 @@
 Определение простого числа.  
   
   
-Для установки игры необходимо использовать команду ```python3 -m pip install --user dist/*.whl``` находясь в корневой директории проекта.  
-[Пример](https://asciinema.org/a/551559?autoplay=1)  
+Для установки игры необходимо использовать команду ```poetry install```  
+Так же имеется возможность сделать билд проекта при помощи двух команд
+```make build```  
+```python3 -m pip install --user dist/*.whl```  
+Для обоих способов необходимо находиться в корневой директории проекта
+<a href="https://asciinema.org/a/608585?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153157794653024296/image.png" alt="Git" /></a>
   
 Для запуска игры по определению четного числа необходимо использовать команду ```brain-even```  
 [Пример](https://asciinema.org/a/551560?autoplay=1)  
