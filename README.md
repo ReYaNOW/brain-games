@@ -72,7 +72,7 @@ brain-prime
 ```
 brain-progression
 ```  
-![](https://im4.ezgif.com/tmp/ezgif-4-ac04da7f83.gif)   
+![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/demo.gif?raw=true)   
   
 <hr>  
 
