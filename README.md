@@ -44,11 +44,7 @@ python3 -m venv venv && source venv/bin/activate
 ## Использование  
   
 Для запуска какой-либо игры используйте одну из перечисленных ниже команд  
-  
-```
-brain-even
-```  
-<a href="https://asciinema.org/a/551560?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153163050870906890/image.png" alt="image" /></a>  
+   
   
 ```
 brain-even
@@ -58,7 +54,7 @@ brain-even
 ```
 brain-calc
 ```
-<a href="https://asciinema.org/a/551578?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153161070479933531/image.png" alt="image" /></a> 
+<a href="https://asciinema.org/a/551578?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153489319403733103/image.png" alt="image" /></a> 
   
   
 ```
