@@ -25,7 +25,7 @@ poetry install
 poetry build && pip install dist/*.whl
 ```
   
-![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install.gif?raw=true)  
+![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install_poe.gif?raw=true)  
   
 ###### Устанавливать игру стоит в отдельном окружении для избежания проблем с зависимостями  
 
