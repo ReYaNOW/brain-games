@@ -60,13 +60,13 @@ brain-calc
 ```
 brain-gcd
 ```  
-<a href="https://asciinema.org/a/551517?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153394675315638403/image.png" alt="image" /></a> 
+<a href="https://asciinema.org/a/551517?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153489703476142090/image.png" alt="image" /></a> 
   
    
 ```
 brain-prime
 ```  
-<a href="https://asciinema.org/a/551539?autoplay=1" target="_blank" rel="noreferrer"><img src="https://cdn.discordapp.com/attachments/324178393161793536/1153394997568229508/image.png" alt="image" /></a> 
+<a href="https://asciinema.org/a/551539?autoplay=1" target="_blank" rel="noreferrer"><img src="https://media.discordapp.net/attachments/324178393161793536/1153489914026016838/image.png" alt="image" /></a> 
   
   
 ```
