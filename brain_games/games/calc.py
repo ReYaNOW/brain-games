@@ -5,9 +5,7 @@ from brain_games.engine import run_game
 from brain_games.utils import get_random_int
 
 
-def get_calc_expression_and_answer() -> tuple[str, str]:
-    num1, num2 = get_random_int(), get_random_int()
-
+def get_math_sign_and_result(num1, num2):
     symbols = ['+', '-', '*']
     symbol = choice(symbols)
 
@@ -18,6 +16,12 @@ def get_calc_expression_and_answer() -> tuple[str, str]:
             answer = num1 - num2
         case _:
             answer = num1 * num2
+    return symbol, answer
+
+
+def get_calc_expression_and_answer() -> tuple[str, str]:
+    num1, num2 = get_random_int(), get_random_int()
+    symbol, answer = get_math_sign_and_result(num1, num2)
 
     question = f'{num1} {symbol} {num2}'
     return question, str(answer)

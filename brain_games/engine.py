@@ -15,8 +15,9 @@ def run_game(get_quest_and_answer: callable, game_instruction: str):
             print('Correct!')
         else:
             print(
-                f"'{user_answer}' is wrong answer ;(. Correct answer was \
-'{correct_answer}'\nLet's try again, {name}!"
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'.\n"
+                f"Let's try again, {name}!"
             )
             return
 
