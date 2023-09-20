@@ -20,9 +20,14 @@
 poetry install
 ```
   
-Так же имеется возможность сделать билд проекта с последующей установкой при помощи двух команд
+Так же имеется возможность сделать билд игры с последующей установкой при помощи двух команд
 ```
 poetry build && pip install dist/*.whl
+```
+
+Так же можно установить игру без клонирования репозитория, но после этого нужно будет установить зависимости, указанные ниже
+```
+python3 -m pip install --user git+https://github.com/ReYaNOW/python-project-49.git
 ```
   
 ![](https://github.com/ReYaNOW/repo_for_gifs/blob/main/install_poe.gif?raw=true)  
@@ -76,7 +81,9 @@ brain-progression
   
 <hr>  
 
-Минимальные требования:  
-Наличие CLI  
-Python^3.10  
-Poetry
+### Минимальные требования:  
+[Python^3.10](https://www.python.org/)  
+[Poetry](https://python-poetry.org/)  
+#### Библиотеки Python:  
+[Flake8](https://github.com/pycqa/flake8)  
+[Prompt](https://github.com/sfischer13/python-prompt)  
